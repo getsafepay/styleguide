@@ -1,0 +1,270 @@
+@import "../../../node_modules/@radix-ui/colors/green.css";
+@import "../../../node_modules/@radix-ui/colors/greenDark.css";
+@import "../../../node_modules/@radix-ui/colors/yellow.css";
+@import "../../../node_modules/@radix-ui/colors/yellowDark.css";
+@import "../../../node_modules/@radix-ui/colors/red.css";
+@import "../../../node_modules/@radix-ui/colors/redDark.css";
+@import "../../../node_modules/@radix-ui/colors/blue.css";
+@import "../../../node_modules/@radix-ui/colors/blueDark.css";
+@import "../../../node_modules/@radix-ui/colors/orange.css";
+@import "../../../node_modules/@radix-ui/colors/orangeDark.css";
+@import "../../../node_modules/@radix-ui/colors/purple.css";
+@import "../../../node_modules/@radix-ui/colors/purpleDark.css";
+@import "../../../node_modules/@radix-ui/colors/pink.css";
+@import "../../../node_modules/@radix-ui/colors/pinkDark.css";
+@import "../../../node_modules/@radix-ui/colors/slate.css";
+@import "../../../node_modules/@radix-ui/colors/slateDark.css";
+
+:root {
+  --sfpy-color-white: #fff;
+  --sfpy-color-black: #000;
+
+  /* App Icon Backgrounds */
+  --sfpy-color-app-cyan: #07c0cb;
+  --sfpy-color-app-light-blue: #1e92c4;
+  --sfpy-color-app-dark-blue: #0b67af;
+  --sfpy-color-app-indigo: #4b50b2;
+  --sfpy-color-app-purple: #8945a3;
+  --sfpy-color-app-pink: #c04891;
+  --sfpy-color-app-orange: #e96d3c;
+  --sfpy-color-app-gold: #f38f2f;
+  --sfpy-color-app-yellow: #eebc01;
+  --sfpy-color-app-lime: #aabd04;
+  --sfpy-color-app-light-green: #6aa72a;
+  --sfpy-color-app-dark-green: #3a8e39;
+
+  /* Backgrounds */
+  --sfpy-theme-background-default: var(--sfpy-color-white);
+  --sfpy-theme-background-screen: var(--slate1);
+  --sfpy-theme-background-subtle: var(--slate2);
+  --sfpy-theme-background-element: var(--slate3);
+  --sfpy-theme-background-hover: var(--slate4);
+  --sfpy-theme-background-selected: var(--slate5);
+  --sfpy-theme-background-overlay: var(--sfpy-color-white);
+  --sfpy-theme-background-success: var(--green3);
+  --sfpy-theme-background-warning: var(--yellow3);
+  --sfpy-theme-background-danger: var(--red3);
+  --sfpy-theme-background-info: var(--blue3);
+
+  /* Icons */
+  --sfpy-theme-icon-default: var(--slate11);
+  --sfpy-theme-icon-secondary: var(--slate10);
+  --sfpy-theme-icon-tertiary: var(--slate9);
+  --sfpy-theme-icon-quaternary: var(--slate8);
+  --sfpy-theme-icon-success: var(--green10);
+  --sfpy-theme-icon-warning: var(--yellow11);
+  --sfpy-theme-icon-danger: var(--red10);
+  --sfpy-theme-icon-info: var(--blue10);
+
+  /* Text */
+  --sfpy-theme-text-default: var(--slate12);
+  --sfpy-theme-text-secondary: var(--slate11);
+  --sfpy-theme-text-tertiary: var(--slate10);
+  --sfpy-theme-text-quaternary: var(--slate9);
+  --sfpy-theme-text-link: var(--blue11);
+  --sfpy-theme-text-success: var(--green11);
+  --sfpy-theme-text-warning: var(--yellow11);
+  --sfpy-theme-text-danger: var(--red11);
+  --sfpy-theme-text-info: var(--blue11);
+
+  /* Borders */
+  --sfpy-theme-border-default: var(--slate7);
+  --sfpy-theme-border-secondary: var(--slate6);
+  --sfpy-theme-border-success: var(--green7);
+  --sfpy-theme-border-warning: var(--yellow7);
+  --sfpy-theme-border-danger: var(--red7);
+  --sfpy-theme-border-info: var(--blue7);
+
+  /* Buttons */
+  --sfpy-theme-button-primary-background: var(--blue10);
+  --sfpy-theme-button-primary-border: var(--blue10);
+  --sfpy-theme-button-primary-hover: var(--blue11);
+  --sfpy-theme-button-primary-icon: var(--blue3);
+  --sfpy-theme-button-primary-text: var(--sfpy-color-white);
+  --sfpy-theme-button-primary-disabled-background: var(--blue7);
+  --sfpy-theme-button-primary-disabled-border: var(--blue7);
+  --sfpy-theme-button-primary-disabled-text: var(--sfpy-color-white);
+
+  --sfpy-theme-button-secondary-background: var(--sfpy-color-white);
+  --sfpy-theme-button-secondary-border: var(--slate8);
+  --sfpy-theme-button-secondary-hover: var(--slate3);
+  --sfpy-theme-button-secondary-icon: var(--slate11);
+  --sfpy-theme-button-secondary-text: var(--slate12);
+  --sfpy-theme-button-secondary-disabled-background: var(--sfpy-color-white);
+  --sfpy-theme-button-secondary-disabled-border: var(--slate6);
+  --sfpy-theme-button-secondary-disabled-text: var(--slate9);
+
+  --sfpy-theme-button-tertiary-background: transparent;
+  --sfpy-theme-button-tertiary-border: transparent;
+  --sfpy-theme-button-tertiary-hover: var(--blue4);
+  --sfpy-theme-button-tertiary-icon: var(--blue9);
+  --sfpy-theme-button-tertiary-text: var(--blue10);
+  --sfpy-theme-button-tertiary-disabled-background: transparent;
+  --sfpy-theme-button-tertiary-disabled-border: transparent;
+  --sfpy-theme-button-tertiary-disabled-text: var(--blue8);
+
+  --sfpy-theme-button-quaternary-background: transparent;
+  --sfpy-theme-button-quaternary-border: transparent;
+  --sfpy-theme-button-quaternary-hover: var(--slate4);
+  --sfpy-theme-button-quaternary-icon: var(--slate11);
+  --sfpy-theme-button-quaternary-text: var(--slate12);
+  --sfpy-theme-button-quaternary-disabled-background: transparent;
+  --sfpy-theme-button-quaternary-disabled-border: transparent;
+  --sfpy-theme-button-quaternary-disabled-text: var(--slate9);
+
+  --sfpy-theme-button-primary-destructive-background: var(--red10);
+  --sfpy-theme-button-primary-destructive-border: var(--red10);
+  --sfpy-theme-button-primary-destructive-hover: var(--red11);
+  --sfpy-theme-button-primary-destructive-icon: var(--red3);
+  --sfpy-theme-button-primary-destructive-text: var(--sfpy-color-white);
+  --sfpy-theme-button-primary-destructive-disabled-background: var(--red7);
+  --sfpy-theme-button-primary-destructive-disabled-border: var(--red7);
+  --sfpy-theme-button-primary-destructive-disabled-text: var(--sfpy-color-white);
+
+  --sfpy-theme-button-secondary-destructive-background: var(--sfpy-color-white);
+  --sfpy-theme-button-secondary-destructive-border: var(--red7);
+  --sfpy-theme-button-secondary-destructive-hover: var(--red3);
+  --sfpy-theme-button-secondary-destructive-icon: var(--red9);
+  --sfpy-theme-button-secondary-destructive-text: var(--red11);
+  --sfpy-theme-button-secondary-destructive-disabled-background: var(--sfpy-color-white);
+  --sfpy-theme-button-secondary-destructive-disabled-border: var(--red5);
+  --sfpy-theme-button-secondary-destructive-disabled-text: var(--red8);
+
+  /* Light shadows */
+  --sfpy-theme-shadows-none: 0 0 transparent;
+  --sfpy-theme-shadows-xs: 0 1px 3px rgba(0, 0, 0, 0.025),
+    0 1px 2px rgba(0, 0, 0, 0.05);
+  --sfpy-theme-shadows-sm: 0 3px 6px rgba(0, 0, 0, 0.08),
+    0 2px 4px rgba(0, 0, 0, 0.07);
+  --sfpy-theme-shadows-md: 0 10px 20px rgba(0, 0, 0, 0.1),
+    0 3px 6px rgba(0, 0, 0, 0.05);
+  --sfpy-theme-shadows-lg: 0 15px 25px rgba(0, 0, 0, 0.12),
+    0 5px 10px rgba(0, 0, 0, 0.05);
+  --sfpy-theme-shadows-xl: 0 20px 40px rgba(0, 0, 0, 0.15);
+
+  /* Heading Font sizing */
+  --sfpy-theme-heading-base-font-size: 12px;
+}
+
+.dark-theme {
+  /* Backgrounds */
+  --sfpy-theme-background-default: var(--slate1);
+  --sfpy-theme-background-screen: #0C0D0E;
+  --sfpy-theme-background-subtle: var(--slate2);
+  --sfpy-theme-background-element: var(--slate3);
+  --sfpy-theme-background-hover: var(--slate4);
+  --sfpy-theme-background-selected: var(--slate5);
+  --sfpy-theme-background-overlay: var(--slate2);
+  --sfpy-theme-background-success: var(--green3);
+  --sfpy-theme-background-warning: var(--yellow3);
+  --sfpy-theme-background-danger: var(--red3);
+  --sfpy-theme-background-info: var(--blue3);
+
+  /* Icons */
+  --sfpy-theme-icon-default: var(--slate11);
+  --sfpy-theme-icon-secondary: var(--slate10);
+  --sfpy-theme-icon-tertiary: var(--slate9);
+  --sfpy-theme-icon-quaternary: var(--slate8);
+  --sfpy-theme-icon-success: var(--green10);
+  --sfpy-theme-icon-warning: var(--yellow11);
+  --sfpy-theme-icon-danger: var(--red10);
+  --sfpy-theme-icon-info: var(--blue10);
+
+  /* Text */
+  --sfpy-theme-text-default: var(--slate12);
+  --sfpy-theme-text-secondary: var(--slate11);
+  --sfpy-theme-text-tertiary: var(--slate10);
+  --sfpy-theme-text-quaternary: var(--slate9);
+  --sfpy-theme-text-link: var(--blue11);
+  --sfpy-theme-text-success: var(--green11);
+  --sfpy-theme-text-warning: var(--yellow11);
+  --sfpy-theme-text-danger: var(--red11);
+  --sfpy-theme-text-info: var(--blue11);
+
+  /* Borders */
+  --sfpy-theme-border-default: var(--slate7);
+  --sfpy-theme-border-secondary: var(--slate6);
+  --sfpy-theme-border-success: var(--green7);
+  --sfpy-theme-border-warning: var(--yellow7);
+  --sfpy-theme-border-danger: var(--red7);
+  --sfpy-theme-border-info: var(--blue7);
+
+  /* Buttons */
+  --sfpy-theme-button-primary-background: var(--blue8);
+  --sfpy-theme-button-primary-border: var(--blue8);
+  --sfpy-theme-button-primary-hover: var(--blue7);
+  --sfpy-theme-button-primary-icon: var(--blue12);
+  --sfpy-theme-button-primary-text: var(--sfpy-color-white);
+  --sfpy-theme-button-primary-disabled-background: var(--blue7);
+  --sfpy-theme-button-primary-disabled-border: var(--blue7);
+  --sfpy-theme-button-primary-disabled-text: var(--slate11);
+
+  --sfpy-theme-button-secondary-background: var(--slate3);
+  --sfpy-theme-button-secondary-border: var(--slate8);
+  --sfpy-theme-button-secondary-hover: var(--slate4);
+  --sfpy-theme-button-secondary-icon: var(--slate12);
+  --sfpy-theme-button-secondary-text: var(--sfpy-color-white);
+  --sfpy-theme-button-secondary-disabled-background: var(--slate1);
+  --sfpy-theme-button-secondary-disabled-border: var(--slate7);
+  --sfpy-theme-button-secondary-disabled-text: var(--slate11);
+
+  --sfpy-theme-button-tertiary-background: transparent;
+  --sfpy-theme-button-tertiary-border: transparent;
+  --sfpy-theme-button-tertiary-hover: var(--blue4);
+  --sfpy-theme-button-tertiary-icon: var(--blue10);
+  --sfpy-theme-button-tertiary-text: var(--blue11);
+  --sfpy-theme-button-tertiary-disabled-background: transparent;
+  --sfpy-theme-button-tertiary-disabled-border: transparent;
+  --sfpy-theme-button-tertiary-disabled-text: var(--blue9);
+
+  --sfpy-theme-button-quaternary-background: transparent;
+  --sfpy-theme-button-quaternary-border: transparent;
+  --sfpy-theme-button-quaternary-hover: var(--slate4);
+  --sfpy-theme-button-quaternary-icon: var(--slate12);
+  --sfpy-theme-button-quaternary-text: var(--sfpy-color-white);
+  --sfpy-theme-button-quaternary-disabled-background: transparent;
+  --sfpy-theme-button-quaternary-disabled-border: transparent;
+  --sfpy-theme-button-quaternary-disabled-text: var(--slate11);
+
+  --sfpy-theme-button-primary-destructive-background: var(--red8);
+  --sfpy-theme-button-primary-destructive-border: var(--red8);
+  --sfpy-theme-button-primary-destructive-hover: var(--red7);
+  --sfpy-theme-button-primary-destructive-icon: var(--red12);
+  --sfpy-theme-button-primary-destructive-text: var(--sfpy-color-white);
+  --sfpy-theme-button-primary-destructive-disabled-background: var(--red6);
+  --sfpy-theme-button-primary-destructive-disabled-border: var(--red6);
+  --sfpy-theme-button-primary-destructive-disabled-text: var(--red12);
+
+  --sfpy-theme-button-secondary-destructive-background: var(--red3);
+  --sfpy-theme-button-secondary-destructive-border: var(--red7);
+  --sfpy-theme-button-secondary-destructive-hover: var(--red2);
+  --sfpy-theme-button-secondary-destructive-icon: var(--red9);
+  --sfpy-theme-button-secondary-destructive-text: var(--red11);
+  --sfpy-theme-button-secondary-destructive-disabled-background: var(--red2);
+  --sfpy-theme-button-secondary-destructive-disabled-border: var(--red6);
+  --sfpy-theme-button-secondary-destructive-disabled-text: var(--red10);
+
+  /* Dark shadows */
+  --sfpy-theme-shadows-none: 0 0 transparent;
+  --sfpy-theme-shadows-xs: 0 1px 3px rgba(0, 0, 0, 0.3),
+    0 1px 2px rgba(0, 0, 0, 0.3);
+  --sfpy-theme-shadows-sm: 0 3px 6px rgba(0, 0, 0, 0.4),
+    0 2px 4px rgba(0, 0, 0, 0.25);
+  --sfpy-theme-shadows-md: 0 10px 20px rgba(0, 0, 0, 0.25),
+    0 3px 6px rgba(0, 0, 0, 0.25);
+  --sfpy-theme-shadows-lg: 0 15px 25px rgba(0, 0, 0, 0.5),
+    0 5px 10px rgba(0, 0, 0, 0.25);
+  --sfpy-theme-shadows-xl: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 401px) {
+  :root {
+    --sfpy-theme-heading-base-font-size: 14px;
+  }
+}
+
+@media (min-width: 901px) {
+  :root {
+    --sfpy-theme-heading-base-font-size: 16px;
+  }
+}

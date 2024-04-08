@@ -1,0 +1,36 @@
+{
+  "name": "@sfpy/styleguide-base",
+  "version": "0.0.1",
+  "description": "Safepay's base colors and style values.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "bundle": "rollup --config",
+    "build": "run-s clean bundle",
+    "dev": "rollup --config --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/getsafepay/styleguide.git",
+    "directory": "packages/styleguide"
+  },
+  "author": "Ziyad Parekh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/getsafepay/styleguide/issues"
+  },
+  "homepage": "https://github.com/getsafepay/styleguide#readme",
+  "dependencies": {
+    "@radix-ui/colors": "^3.0.0"
+  },
+  "peerDependencies": {
+    "react": ">= 16"
+  },
+  "eslintConfig": {
+    "extends": "universe/node"
+  }
+}

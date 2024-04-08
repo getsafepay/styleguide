@@ -1,0 +1,46 @@
+{
+  "name": "@sfpy/styleguide",
+  "version": "0.0.1",
+  "description": "Safepay's styleguide components for use on the web.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "tailwind.js"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "bundle": "rollup --config",
+    "build": "run-s clean bundle",
+    "dev": "rollup --config --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/getsafepay/styleguide.git",
+    "directory": "packages/styleguide"
+  },
+  "keywords": [
+    "safepay"
+  ],
+  "author": "Ziyad Parekh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/getsafepay/styleguide/issues"
+  },
+  "homepage": "https://github.com/getsafepay/styleguide#readme",
+  "dependencies": {
+    "@radix-ui/colors": "^3.0.0",
+    "tailwind-merge": "^2.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "tailwindcss": "^3.4.0"
+  },
+  "peerDependencies": {
+    "next": ">= 13",
+    "react": ">= 16"
+  },
+  "eslintConfig": {
+    "extends": "universe/web"
+  }
+}

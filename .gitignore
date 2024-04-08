@@ -1,0 +1,24 @@
+.DS_Store
+.npm
+.eslintcache
+
+node_modules
+
+# build
+dist
+tmp
+out
+build
+
+# env files
+.env
+
+# Next
+.next
+next-env.d.ts
+
+# logs
+logs
+*.log
+*.tsbuildinfo
+npm-debug.log*
