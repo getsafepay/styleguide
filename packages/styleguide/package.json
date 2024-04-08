@@ -1,6 +1,6 @@
 {
   "name": "@sfpy/styleguide",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Safepay's styleguide components for use on the web.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/getsafepay/styleguide#readme",
   "dependencies": {
-    "@sfpy/styleguide-base": "^0.0.2",
+    "@sfpy/styleguide-base": "^0.0.3",
     "tailwind-merge": "^2.2.0"
   },
   "devDependencies": {
