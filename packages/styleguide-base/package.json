@@ -32,5 +32,6 @@
   },
   "eslintConfig": {
     "extends": "universe/node"
-  }
+  },
+  "gitHead": "a435d95cee86f9795f53aedc284b7567e878ede3"
 }

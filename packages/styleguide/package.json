@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/getsafepay/styleguide#readme",
   "dependencies": {
-    "@radix-ui/colors": "^3.0.0",
+    "@sfpy/styleguide-base": "^0.0.2",
     "tailwind-merge": "^2.2.0"
   },
   "devDependencies": {
@@ -42,5 +42,6 @@
   },
   "eslintConfig": {
     "extends": "universe/web"
-  }
+  },
+  "gitHead": "a435d95cee86f9795f53aedc284b7567e878ede3"
 }

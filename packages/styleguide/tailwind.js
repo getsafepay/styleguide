@@ -475,4 +475,4 @@ const sfpyTailwindConfig = {
   ],
 };
 
-module.sfpyrts = sfpyTailwindConfig;
+module.exports = sfpyTailwindConfig;
