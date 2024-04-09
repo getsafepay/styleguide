@@ -22,7 +22,7 @@ type ThemeProviderProps = {
 
 export function ThemeProvider(props: ThemeProviderProps) {
   const { children, disabled = false } = props;
-  const initialTheme = (process as any).browser ? (document.documentElement.dataset.expoTheme as Themes) : Themes.AUTO;
+  const initialTheme = (process as any).browser ? (document.documentElement.dataset.sfpyTheme as Themes) : Themes.AUTO;
   const [themeName, setThemeName] = useState(disabled ? Themes.LIGHT : initialTheme);
 
   useEffect(function didMount() {
@@ -38,7 +38,7 @@ export function ThemeProvider(props: ThemeProviderProps) {
     }
 
     if (isLocalStorageAvailable()) {
-      const themePreference = window.localStorage.getItem('data-expo-theme');
+      const themePreference = window.localStorage.getItem('data-sfpy-theme');
 
       if (themePreference === Themes.LIGHT || themePreference === Themes.DARK) {
         setThemeName(themePreference);
@@ -71,7 +71,7 @@ export function ThemeProvider(props: ThemeProviderProps) {
 
   function onThemeChange(event: MediaQueryListEvent | MediaQueryList) {
     if (isLocalStorageAvailable()) {
-      const themePreference = window.localStorage.getItem('data-expo-theme');
+      const themePreference = window.localStorage.getItem('data-sfpy-theme');
 
       if (!themePreference) {
         if (event.matches) {
@@ -87,7 +87,7 @@ export function ThemeProvider(props: ThemeProviderProps) {
 
   function setDarkMode() {
     if (isLocalStorageAvailable()) {
-      window.localStorage.setItem('data-expo-theme', Themes.DARK);
+      window.localStorage.setItem('data-sfpy-theme', Themes.DARK);
     }
     setDocumentTheme(Themes.DARK);
     setThemeName(Themes.DARK);
@@ -95,7 +95,7 @@ export function ThemeProvider(props: ThemeProviderProps) {
 
   function setLightMode() {
     if (isLocalStorageAvailable()) {
-      window.localStorage.setItem('data-expo-theme', Themes.LIGHT);
+      window.localStorage.setItem('data-sfpy-theme', Themes.LIGHT);
     }
     setDocumentTheme(Themes.LIGHT);
     setThemeName(Themes.LIGHT);
@@ -103,7 +103,7 @@ export function ThemeProvider(props: ThemeProviderProps) {
 
   function setAutoMode() {
     if (isLocalStorageAvailable()) {
-      window.localStorage.removeItem('data-expo-theme');
+      window.localStorage.removeItem('data-sfpy-theme');
     }
 
     const themeName = getInitialColorMode() as Themes;
