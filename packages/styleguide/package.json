@@ -1,6 +1,6 @@
 {
   "name": "@sfpy/styleguide",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Safepay's styleguide components for use on the web.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
