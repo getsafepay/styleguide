@@ -17,7 +17,45 @@
 
 :root {
   --sfpy-color-white: #fff;
-  --sfpy-color-black: #000;
+  --sfpy-color-black: #00112c;
+
+  --sfpy-green-1: #27F3A8;
+  --sfpy-green-2: #25E49E;
+  --sfpy-green-3: #00CF83;
+  --sfpy-green-4: #009F65;
+  --sfpy-green-5: #006741;
+  --sfpy-green-6: #00462C;
+
+  --sfpy-blue-1: #335CFF;
+  --sfpy-blue-2: #1F4BFF;
+  --sfpy-blue-3: #0A3BFF;
+  --sfpy-blue-4: #0031F4;
+  --sfpy-blue-5: #002DE0;
+  --sfpy-blue-6: #0029CC;
+
+  --sfpy-red-1: #FE4160;
+  --sfpy-red-2: #FF1745;
+  --sfpy-red-3: #EF1641;
+  --sfpy-red-4: #DC143C;
+  --sfpy-red-5: #C11235;
+  --sfpy-red-6: #9C0E2B;
+
+  --sfpy-grey-1: #f7f7f8;
+  --sfpy-grey-2: #eeeff1;
+  --sfpy-grey-3: #d1d5da;
+  --sfpy-grey-4: #8d95a3;
+  --sfpy-grey-5: #5c687c;
+  --sfpy-grey-6: #2f3e56;
+  --sfpy-grey-7: #1a2a44;
+  --sfpy-grey-8: #0d1e38;
+  --sfpy-grey-9: #00112c;
+
+  --sfpy-organge-1: #ff9650;
+  --sfpy-organge-2: #ff883a;
+  --sfpy-organge-3: #ff7d27;
+  --sfpy-organge-4: #e87223;
+  --sfpy-organge-5: #c6611e;
+  --sfpy-organge-6: #a25018;
 
   /* App Icon Backgrounds */
   --sfpy-color-app-cyan: #07c0cb;
@@ -35,7 +73,7 @@
 
   /* Backgrounds */
   --sfpy-theme-background-default: var(--sfpy-color-white);
-  --sfpy-theme-background-screen: var(--slate-1);
+  --sfpy-theme-background-screen: var(--sfpy-grey-1);
   --sfpy-theme-background-subtle: var(--slate-2);
   --sfpy-theme-background-element: var(--slate-3);
   --sfpy-theme-background-hover: var(--slate-4);
@@ -57,15 +95,18 @@
   --sfpy-theme-icon-info: var(--blue-10);
 
   /* Text */
-  --sfpy-theme-text-default: var(--slate-12);
-  --sfpy-theme-text-secondary: var(--slate-11);
+  --sfpy-theme-text-default: var(--sfpy-color-black);
+  --sfpy-theme-text-secondary: var(--sfpy-grey-5);
+  --sfpy-theme-text-white: var(--sfpy-color-white);
+  --sfpy-theme-text-link: var(--sfpy-blue-5);
+  --sfpy-theme-text-success: var(--sfpy-green-6);
+  --sfpy-theme-text-danger: var(--sfpy-red-6);
+  --sfpy-theme-text-info: var(--sfpy-blue-5);
+
   --sfpy-theme-text-tertiary: var(--slate-10);
   --sfpy-theme-text-quaternary: var(--slate-9);
-  --sfpy-theme-text-link: var(--blue-11);
-  --sfpy-theme-text-success: var(--green-11);
   --sfpy-theme-text-warning: var(--yellow-11);
-  --sfpy-theme-text-danger: var(--red-11);
-  --sfpy-theme-text-info: var(--blue-11);
+
 
   /* Borders */
   --sfpy-theme-border-default: var(--slate-7);
@@ -76,13 +117,21 @@
   --sfpy-theme-border-info: var(--blue-7);
 
   /* Buttons */
-  --sfpy-theme-button-primary-background: var(--blue-10);
-  --sfpy-theme-button-primary-border: var(--blue-10);
-  --sfpy-theme-button-primary-hover: var(--blue-11);
-  --sfpy-theme-button-primary-icon: var(--blue-3);
+  --sfpy-color-primary-blue: var(--sfpy-blue-5);
+  --sfpy-color-primary-black: var(--sfpy-color-black);
+  --sfpy-color-primary-white: var(--sfpy-color-white);
+  --sfpy-color-primary-grey: var(--sfpy-grey-1);
+  --sfpy-color-primary-blue-hover: var(--sfpy-blue-6);
+  --sfpy-color-primary-black-hover: var(--sfpy-grey-6);
+  --sfpy-color-primary-white-hover: var(--sfpy-grey-2);
+
+  --sfpy-theme-button-primary-background: var(--sfpy-blue-5);
+  --sfpy-theme-button-primary-border: var(--sfpy-blue-5);
+  --sfpy-theme-button-primary-hover: var(--sfpy-blue-6);
+  --sfpy-theme-button-primary-icon: var(--sfpy-blue-1);
   --sfpy-theme-button-primary-text: var(--sfpy-color-white);
-  --sfpy-theme-button-primary-disabled-background: var(--blue-7);
-  --sfpy-theme-button-primary-disabled-border: var(--blue-7);
+  --sfpy-theme-button-primary-disabled-background: var(--sfpy-blue-6);
+  --sfpy-theme-button-primary-disabled-border: var(--sfpy-blue-6);
   --sfpy-theme-button-primary-disabled-text: var(--sfpy-color-white);
 
   --sfpy-theme-button-secondary-background: var(--sfpy-color-white);
