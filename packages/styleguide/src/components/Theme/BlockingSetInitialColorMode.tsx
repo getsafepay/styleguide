@@ -18,7 +18,7 @@ export function isLocalStorageAvailable(): boolean {
 
 export function getInitialColorMode(): string | null {
   if (isLocalStorageAvailable()) {
-    const preference = window.localStorage.getItem('data-expo-theme');
+    const preference = window.localStorage.getItem('data-sfpy-theme');
     const hasPreference = typeof preference === 'string';
 
     if (hasPreference) {
